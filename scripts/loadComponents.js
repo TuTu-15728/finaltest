@@ -1,6 +1,6 @@
 // Detect if we're on GitHub Pages
 // const isGitHubPages = window.location.hostname.includes('github.io');
-const basePath = '/';
+const basePath = 'finaltest';
 
 // Load components
 async function loadComponents() {
