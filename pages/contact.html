@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | MySite</title>
+  <base href="/">
+  <link rel="stylesheet" href="../styles/base/reset.css">
+  <link rel="stylesheet" href="../styles/base/typography.css">
+  <link rel="stylesheet" href="../styles/shared/header.css">
+  <link rel="stylesheet" href="../styles/shared/footer.css">
+  <link rel="stylesheet" href="../styles/specific/contact.css">
+</head>
+<body>
+  <!-- Header will be loaded here -->
+  <script src="../scripts/loadComponents.js"></script>
+
+  <main class="contact-page">
+    <div class="contact-hero">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you! Reach out for inquiries or support.</p>
+    </div>
+
+    <div class="contact-container">
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </section>
+
+      <section class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="info-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          <h3>Email</h3>
+          <a href="mailto:contact@mysite.com">contact@mysite.com</a>
+        </div>
+        
+        <div class="info-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <h3>Location</h3>
+          <address>123 Business Ave, City, ST 10001</address>
+        </div>
+        
+        <div class="info-card">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+          </svg>
+          <h3>Phone</h3>
+          <a href="tel:+11234567890">+1 (123) 456-7890</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact-map">
+      <h2>Find Us</h2>
+      <div class="map-container">
+        <!-- Embedded map placeholder -->
+        <div class="map-placeholder">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <p>Map would display here</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer will be loaded here -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+.about-page {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-page h1 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-page img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .mission, .team {
+    margin-bottom: 3rem;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  @media (min-width: 600px) {
+    .about-page {
+      padding: 2rem;
+    }
+    
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
